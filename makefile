@@ -1,7 +1,7 @@
 # makefile
 
 #
-# Patches/Installs/Builds DSDT patches for HP Envy (Haswell K-series)
+# Patches/Installs/Builds DSDT patches for HP Envy (Haswell Q-series)
 #
 # Created by RehabMan
 #
@@ -163,7 +163,7 @@ install_backlight:
 .PHONY: patch
 patch: $(ALL_PATCHED)
 
-$(PATCHED)/$(DSDT).dsl: $(UNPATCHED)/$(DSDT).dsl patches/syntax_dsdt.txt patches/syntax_dsdt_nvidia.txt patches/cleanup.txt patches/remove_wmi.txt patches/iaoe.txt patches/keyboard.txt patches/audio.txt patches/sensors.txt $(LAPTOPGIT)/system/system_IRQ.txt $(LAPTOPGIT)/graphics/graphics_Rename-GFX0.txt patches/hdmi_audio.txt $(LAPTOPGIT)/usb/usb_7-series.txt patches/usb.txt $(LAPTOPGIT)/system/system_WAK2.txt $(LAPTOPGIT)/system/system_OSYS_win7.txt $(LAPTOPGIT)/system/system_MCHC.txt $(LAPTOPGIT)/system/system_HPET.txt $(LAPTOPGIT)/system/system_RTC.txt $(LAPTOPGIT)/system/system_SMBUS.txt $(LAPTOPGIT)/system/system_Mutex.txt $(LAPTOPGIT)/system/system_PNOT.txt $(LAPTOPGIT)/system/system_IMEI.txt $(LAPTOPGIT)/battery/battery_HP-G6-2221ss.txt patches/bcm_wifi.txt patches/card_reader.txt
+$(PATCHED)/$(DSDT).dsl: $(UNPATCHED)/$(DSDT).dsl patches/syntax_dsdt.txt patches/syntax_dsdt_nvidia.txt patches/cleanup.txt patches/remove_wmi.txt patches/iaoe.txt patches/keyboard.txt patches/audio.txt patches/sensors.txt $(LAPTOPGIT)/system/system_IRQ.txt $(LAPTOPGIT)/graphics/graphics_Rename-GFX0.txt patches/hdmi_audio.txt $(LAPTOPGIT)/usb/usb_7-series.txt patches/usb.txt $(LAPTOPGIT)/system/system_WAK2.txt $(LAPTOPGIT)/system/system_OSYS_win7.txt $(LAPTOPGIT)/system/system_MCHC.txt $(LAPTOPGIT)/system/system_HPET.txt $(LAPTOPGIT)/system/system_RTC.txt $(LAPTOPGIT)/system/system_SMBUS.txt $(LAPTOPGIT)/system/system_Mutex.txt $(LAPTOPGIT)/system/system_PNOT.txt $(LAPTOPGIT)/system/system_IMEI.txt $(LAPTOPGIT)/battery/battery_HP-Envy-17t.txt patches/bcm_wifi.txt patches/card_reader.txt
 	cp $(UNPATCHED)/$(DSDT).dsl $(PATCHED)
 	patchmatic $@ patches/syntax_dsdt.txt
 ifneq "$(PEGP)" ""
@@ -189,7 +189,7 @@ endif
 	patchmatic $@ $(LAPTOPGIT)/system/system_Mutex.txt
 	#patchmatic $@ $(LAPTOPGIT)/system/system_PNOT.txt
 	patchmatic $@ $(LAPTOPGIT)/system/system_IMEI.txt
-	patchmatic $@ $(LAPTOPGIT)/battery/battery_HP-G6-2221ss.txt
+	patchmatic $@ $(LAPTOPGIT)/battery/battery_HP-Envy-17t.txt
 	#patchmatic $@ patches/ar92xx_wifi.txt
 	#patchmatic $@ patches/bcm_wifi.txt
 	#patchmatic $@ patches/card_reader.txt

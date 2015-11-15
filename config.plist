@@ -122,14 +122,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(ITLB,0,N) to XTLB</string>
-					<key>Find</key>
-					<data>SVRMQgA=</data>
-					<key>Replace</key>
-					<data>WFRMQgA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(GBTI,1,N) to XBTI</string>
 					<key>Find</key>
 					<data>R0JUSQE=</data>

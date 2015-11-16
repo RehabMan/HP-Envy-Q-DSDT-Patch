@@ -25,11 +25,11 @@ download os-x-realtek-network RehabMan-Realtek-Network
 #download os-x-acpi-backlight RehabMan-Backlight
 download os-x-intel-backlight RehabMan-IntelBacklight
 download os-x-acpi-battery-driver RehabMan-Battery
-download os-x-eapd-codec-commander RehabMan-CodecCommander
+#download os-x-eapd-codec-commander RehabMan-CodecCommander
 download os-x-fake-pci-id RehabMan-FakePCIID
 download os-x-brcmpatchram RehabMan-BrcmPatchRAM
-#download os-x-acpi-debug RehabMan-Debug
 download os-x-usb-inject-all RehabMan-USBInjectAll
+#download os-x-acpi-debug RehabMan-Debug
 cd ..
 
 # download tools

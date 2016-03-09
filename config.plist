@@ -10,6 +10,14 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+					<key>Find</key>
+					<data>X0RTTQ==</data>
+					<key>Replace</key>
+					<data>WERTTQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
 					<key>Find</key>
 					<data>X09TSQ==</data>
@@ -55,6 +63,14 @@
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,S) to XPRW</string>
+					<key>Find</key>
+					<data>FEUIR1BSVwo=</data>
+					<key>Replace</key>
+					<data>FEUIWFBSVwo=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -123,6 +139,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change SSDT Method(_DSM,4,Serialized) to XDSM</string>
+					<key>Disabled</key>
+					<true/>
 					<key>Find</key>
 					<data>X0RTTQxwe2oK/wA=</data>
 					<key>Replace</key>
@@ -131,6 +149,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>change SSDT _SB.PCI0.IGPU._DSM to XDSM</string>
+					<key>Disabled</key>
+					<true/>
 					<key>Find</key>
 					<data>X1NCX1BDSTBJR1BVX0RTTQ==</data>
 					<key>Replace</key>

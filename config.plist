@@ -583,12 +583,26 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105(12), 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Find</key>
 				<data>AQUJAAAEAACHAAAA</data>
 				<key>Replace</key>
 				<data>AQUSAAAIAACHAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>fix lag 10.12+, port 0105, 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
+				<key>Find</key>
+				<data>AQUJAAAEAACHAAAA</data>
+				<key>Replace</key>
+				<data>/wAAAAEAAABAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
